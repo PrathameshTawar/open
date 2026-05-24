@@ -1,0 +1,29 @@
+{
+  "name": "openclaw-reader",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsx src/testLocal.ts",
+    "mcp": "node dist/mcpServer.js",
+    "test:local": "npm run dev"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "chokidar": "^4.0.1",
+    "fast-glob": "^3.3.2",
+    "fs-extra": "^11.2.0",
+    "lodash.isequal": "^4.5.0",
+    "simple-git": "^3.28.0",
+    "zod": "^4.1.11"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.22.3",
+    "typescript": "^5.7.2"
+  }
+}
